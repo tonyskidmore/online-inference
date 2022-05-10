@@ -19,3 +19,13 @@ docker logs online-inference
 docker image ls
 
 ````
+
+## Pull from GitHub Container Registry
+
+````bash
+
+docker pull ghcr.io/tonyskidmore/online-inference:a686167be45e634bf91bf8569c0a8f08ff1def78
+
+````
+
+Where `a686167be45e634bf91bf8569c0a8f08ff1def78` is the commit hash version of the container you want to pull.
