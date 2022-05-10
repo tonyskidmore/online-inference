@@ -29,6 +29,7 @@ RUN python3 train.py
 
 # RUN chmod u+x /usr/local/bin/init.sh
 
-EXPOSE 5000 2222
+EXPOSE 5000
+#2222
 CMD ["python3", "api.py"]
 #ENTRYPOINT ["init.sh"]
