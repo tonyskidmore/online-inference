@@ -8,7 +8,7 @@ Test online inference Python docker built using [Machine Learning Prediction in 
 
 docker build -t online-inference -f Dockerfile .
 
-docker run -d -it --name online-inference -p 80:8888 online-inference
+docker run -d -it --name online-inference -p 80:5000 online-inference
 
 curl http://0.0.0.0/line/232
 curl http://0.0.0.0/prediction/232
