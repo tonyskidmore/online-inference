@@ -77,5 +77,5 @@ def score():
     return {'Score LDA': score_lda, 'Score Neural Network': score_nn}
 
 if __name__ == "__main__":
-    app.run(port=8888, host='0.0.0.0', debug=True)
+    app.run(port=80, host='0.0.0.0', debug=True)
     # app.run(debug=True, host='0.0.0.0')
