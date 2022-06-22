@@ -30,7 +30,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def healthy():
-   return "Healthy"
+   return "Healthy2"
 
 # API 1
 # Flask route so that we can serve HTTP traffic on that route
