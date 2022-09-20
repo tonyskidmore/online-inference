@@ -17,15 +17,15 @@ COPY api.py ./api.py
 RUN python3 train.py
 
 # ssh
-ENV SSH_PASSWD "root:Docker!"
-RUN apt-get update \
-        && apt-get install -y --no-install-recommends dialog \
-        && apt-get update \
-	&& apt-get install -y --no-install-recommends openssh-server \
-	&& echo "$SSH_PASSWD" | chpasswd
+# ENV SSH_PASSWD "root:Docker!"
+# RUN apt-get update \
+#         && apt-get install -y --no-install-recommends dialog \
+#         && apt-get update \
+# 	&& apt-get install -y --no-install-recommends openssh-server \
+# 	&& echo "$SSH_PASSWD" | chpasswd
 
-COPY sshd_config /etc/ssh/
-COPY init.sh /usr/local/bin/
+# COPY sshd_config /etc/ssh/
+# COPY init.sh /usr/local/bin/
 
 # RUN chmod u+x /usr/local/bin/init.sh
 
